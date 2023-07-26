@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 
+// Importing the functions
+import { returnLetter } from "../functions/returnLetter";
+
 // Importing the style file
 import "./App.css";
 
@@ -8,9 +11,10 @@ const App = () => {
   let handleClick = true;
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (!handleClick) return;
     handleClick = false;
-    console.log(e.key);
+    returnLetter(e.key);
     e.target.value = "";
     ref.current?.focus();
   };
