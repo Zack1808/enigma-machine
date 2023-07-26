@@ -1,5 +1,5 @@
 // Function that will scramble the letter
-export const returnLetter = (key, pos1 = 0, pos2 = 0, pos3 = 0) => {
+export const returnLetter = (key, pos1 = 24, pos2 = 24, pos3 = 24) => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const rotor1Letters = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
   const rotor2Letters = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
@@ -35,5 +35,5 @@ export const returnLetter = (key, pos1 = 0, pos2 = 0, pos3 = 0) => {
   index = rotor3Letters.indexOf(
     letters[index - pos2 >= 0 ? index - pos2 : index - pos2 + 25]
   );
-  console.log(letters[index]);
+  console.log(letters[index - pos3 >= 0 ? index - pos3 : index - pos3 + 25]);
 };
