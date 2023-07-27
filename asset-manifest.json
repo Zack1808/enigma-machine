@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/enigma-machine/static/css/main.538a2fe4.css",
-    "main.js": "/enigma-machine/static/js/main.df1a16f5.js",
+    "main.js": "/enigma-machine/static/js/main.8e47c758.js",
     "index.html": "/enigma-machine/index.html",
     "main.538a2fe4.css.map": "/enigma-machine/static/css/main.538a2fe4.css.map",
-    "main.df1a16f5.js.map": "/enigma-machine/static/js/main.df1a16f5.js.map"
+    "main.8e47c758.js.map": "/enigma-machine/static/js/main.8e47c758.js.map"
   },
   "entrypoints": [
     "static/css/main.538a2fe4.css",
-    "static/js/main.df1a16f5.js"
+    "static/js/main.8e47c758.js"
   ]
 }
