@@ -16,6 +16,7 @@ h1 {
   font-family: "Rubik Glitch", cursive;
   font-size: clamp(3rem, 10vw, 6rem);
   padding-block: 0.5em;
+  text-align: center;
 }
 
 :root {
