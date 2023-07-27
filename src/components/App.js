@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 // Importing costume components
 import Rotor from "./Rotor/Rotor";
+import Textarea from "./Textarea/Textarea";
 
 // Importing the functions
 import { encript } from "../functions/returnLetter";
@@ -11,6 +12,9 @@ import "./App.css";
 
 // Creating the App component
 const App = () => {
+  // Setting up the state
+  const [value, setValue] = useState("");
+
   // Setting up the refs
   const rotor1 = useRef();
   const rotor2 = useRef();
@@ -55,19 +59,22 @@ const App = () => {
         }
       }
     }
-    console.log(encription);
+    setValue(encription);
   };
 
   return (
     <form className="app-container" onSubmit={handleSubmit}>
       <h1>Encode me</h1>
       <div className="rotors">
-        <Rotor ref={{ rotor: rotor3, rotation: rotation3 }} />
-        <Rotor ref={{ rotor: rotor2, rotation: rotation2 }} />
-        <Rotor ref={{ rotor: rotor1, rotation: rotation1 }} />
+        <Rotor ref={{ rotor: rotor3, rotation: rotation3 }} label="Rotor 3" />
+        <Rotor ref={{ rotor: rotor2, rotation: rotation2 }} label="Rotor 2" />
+        <Rotor ref={{ rotor: rotor1, rotation: rotation1 }} label="Rotor 1" />
       </div>
-      <input type="text" ref={textfield} />
-      <button>submit</button>
+      <div className="textarea">
+        <Textarea input ref={textfield} />
+        <button>submit</button>
+        <Textarea value={value} />
+      </div>
     </form>
   );
 };

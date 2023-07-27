@@ -34,9 +34,19 @@ form {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 1em;
+  gap: 50px;
 }
 
 .rotors {
   display: flex;
   gap: 1.5em;
+}
+
+.textarea {
+  display: flex;
+  width: 80%;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 }

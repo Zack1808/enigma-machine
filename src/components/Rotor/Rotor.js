@@ -4,11 +4,11 @@ import React from "react";
 import "./Rotor.css";
 
 // Creating the Rotor component
-const Rotor = React.forwardRef((props, ref) => {
+const Rotor = React.forwardRef(({ label }, ref) => {
   return (
     <div className="rotor-container">
       <div className="rotor-number">
-        <h3>Rotor</h3>
+        <h3>{label}</h3>
         <input
           type="number"
           inputMode="numeric"

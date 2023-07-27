@@ -1,0 +1,15 @@
+/* Styling the Textarea component */
+textarea {
+  width: 100%;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  background-color: var(--bg-container-color);
+  border: none;
+  padding: 0.5em;
+  color: var(--txt-color);
+  resize: none;
+  height: 10em;
+}
+
+textarea:focus {
+  outline: 1px solid var(--txt-color);
+}

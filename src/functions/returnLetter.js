@@ -29,5 +29,9 @@ export const encript = (key, rotor1, rotor2, rotor3, pos1, pos2, pos3) => {
   index = rotors[rotor1].indexOf(
     letters[index - pos2 >= 0 ? index - pos2 : index - pos2 + 26]
   );
-  return letters[index - pos1 >= 0 ? index - pos1 : index - pos1 + 26];
+  if (key === key.toUpperCase())
+    return letters[index - pos1 >= 0 ? index - pos1 : index - pos1 + 26];
+  return letters[
+    index - pos1 >= 0 ? index - pos1 : index - pos1 + 26
+  ].toLowerCase();
 };
