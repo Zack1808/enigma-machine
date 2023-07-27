@@ -73,9 +73,13 @@ const App = () => {
         <Rotor ref={{ rotor: rotor1, rotation: rotation1 }} label="Rotor 1" />
       </div>
       <div className="textarea">
-        <Textarea input ref={textfield} />
+        <Textarea
+          input
+          ref={textfield}
+          label="Message that will be encrypted/decrypted"
+        />
         <Button type="submit" label={<UilExchangeAlt />} />
-        <Textarea value={value} />
+        <Textarea value={value} label="Encrypted/decrypted message" />
       </div>
     </form>
   );
