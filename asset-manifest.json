@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/encoder/static/css/main.d6902b71.css",
-    "main.js": "/encoder/static/js/main.7761c4fc.js",
-    "index.html": "/encoder/index.html",
-    "main.d6902b71.css.map": "/encoder/static/css/main.d6902b71.css.map",
-    "main.7761c4fc.js.map": "/encoder/static/js/main.7761c4fc.js.map"
+    "main.css": "/enigma-machine/static/css/main.d6902b71.css",
+    "main.js": "/enigma-machine/static/js/main.7761c4fc.js",
+    "index.html": "/enigma-machine/index.html",
+    "main.d6902b71.css.map": "/enigma-machine/static/css/main.d6902b71.css.map",
+    "main.7761c4fc.js.map": "/enigma-machine/static/js/main.7761c4fc.js.map"
   },
   "entrypoints": [
     "static/css/main.d6902b71.css",
