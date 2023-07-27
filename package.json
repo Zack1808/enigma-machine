@@ -2,7 +2,7 @@
   "name": "enigma-machine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Zack1808.github.io/encoder",
+  "homepage": "https://Zack1808.github.io/enigma-machine",
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
     "@testing-library/jest-dom": "^5.17.0",
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
