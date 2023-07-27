@@ -57,8 +57,8 @@ If you have any questions or suggestions, you can reach me via:
 
 So open the app, use the following settup
 
-- Rotor 1: 3, starting position: 9\n
-- Rotor 2: 4, starting position: 20\n
+- Rotor 1: 3, starting position: 9
+- Rotor 2: 4, starting position: 20
 - Rotor 3: 5, starting position: 25
 
 rsj mwoxe nxlnslbmek rbb gxuowmfucs uqkljvbb!
