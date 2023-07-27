@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
+import { UilExchangeAlt } from "@iconscout/react-unicons";
 
 // Importing costume components
 import Rotor from "./Rotor/Rotor";
 import Textarea from "./Textarea/Textarea";
+import Button from "./Button/Button";
 
 // Importing the functions
 import { encript } from "../functions/returnLetter";
@@ -72,7 +74,7 @@ const App = () => {
       </div>
       <div className="textarea">
         <Textarea input ref={textfield} />
-        <button>submit</button>
+        <Button type="submit" label={<UilExchangeAlt />} />
         <Textarea value={value} />
       </div>
     </form>

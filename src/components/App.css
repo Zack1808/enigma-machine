@@ -22,12 +22,14 @@ h1 {
   --txt-color: hsl(120, 100%, 50%);
   --bg-color: hsl(0 0% 20%);
   --bg-container-color: hsl(0 0% 100% / 0.07);
+  --btn-color: hsl(120, 100%, 50%);
+  --btn-txt-color: hsl(0 0% 0%);
 }
 
 form {
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--bg-color);
   color: var(--txt-color);
   display: flex;
@@ -49,4 +51,11 @@ form {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (width < 650px) {
+  .textarea {
+    width: 100%;
+    flex-direction: column;
+  }
 }
