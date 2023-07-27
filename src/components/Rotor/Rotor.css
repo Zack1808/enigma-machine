@@ -1,0 +1,31 @@
+/* Styling the Rotor component */
+.rotor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rotor-number,
+.rotor-rotation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  background-color: var(--bg-container-color);
+  border: none;
+  padding-block: 0.2em;
+  color: var(--txt-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
