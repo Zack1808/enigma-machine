@@ -7,7 +7,7 @@ import Textarea from "./Textarea/Textarea";
 import Button from "./Button/Button";
 
 // Importing the functions
-import { encript } from "../functions/returnLetter";
+import { encript } from "../functions/encript";
 
 // Importing the style file
 import "./App.css";
