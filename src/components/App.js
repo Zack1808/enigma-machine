@@ -14,7 +14,7 @@ const App = () => {
     e.preventDefault();
     if (!handleClick) return;
     handleClick = false;
-    returnLetter(e.key);
+    console.log(returnLetter(e.key));
     e.target.value = "";
     ref.current?.focus();
   };
