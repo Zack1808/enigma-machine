@@ -66,7 +66,7 @@ const App = () => {
 
   return (
     <form className="app-container" onSubmit={handleSubmit}>
-      <h1>Encode me</h1>
+      <h1>Enigma machine</h1>
       <div className="rotors">
         <Rotor ref={{ rotor: rotor3, rotation: rotation3 }} label="Rotor 3" />
         <Rotor ref={{ rotor: rotor2, rotation: rotation2 }} label="Rotor 2" />
